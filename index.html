@@ -9,8 +9,8 @@
     </head>
     <body>
         <div id="root">
-            <ul class="mail-list">
-                <li class="list__item"></li>
+            <ul class="mail-list" v-show="mailList.length == 10">
+                <li class="list__item" v-for="item in mailList">{{item}}</li>
             </ul>
         </div>
         
