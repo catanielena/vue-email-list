@@ -9,11 +9,14 @@
     </head>
     <body>
         <div id="root">
-            <ul class="mail-list" v-show="mailList.length == 10">
+            <!-- <ul class="mail-list" v-show="mailList.length == 10">
                 <li class="list__item" v-for="item in mailList">{{item}}</li>
             </ul>
+            <p>{{mouse.x}}{{mouse.y}}</p> -->
+            <div class="title">CLICK & PRINT</div>
+            <canvas @click="animate"></canvas>
         </div>
-        
+         
         <!-- Axios,Vue -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
